@@ -3,7 +3,7 @@ The classic way of making Windows shellcode which involves hardcoding the addres
 
 Process Environment Block (PEB) is a structure that is used by the operating system. It contains information about the current OS so it could be used to determine and enumerate its current libraries address such as the well-known library kernel32.dll and ntdll.dll.
 
-A demonstartion of PEB-Based Shellcode that enumerate through PEB structure to extract kernel32.dll address and using the that address to enumerate again for the function of interest which is WinExec to run calculator.
+A demonstration of PEB-Based Shellcode that enumerate through PEB structure to extract kernel32.dll address and using the that address to enumerate again for the function of interest which is WinExec to run calculator.
 
 ```asm
 [BITS 32]
